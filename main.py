@@ -1,4 +1,5 @@
 from datetime import datetime
+
 question_collection = ""
 x = 0
 update_value = 0
@@ -12,11 +13,9 @@ while x == 0:
         list_of_questions[key]= value
         print(list_of_questions)
     elif choice == "upvote":
+        print(list_of_questions)
         upvote_question = input("Which question do you want to upvote:  ")
         list_of_questions[upvote_question] = list_of_questions[upvote_question] + 1
-        for key, value in sorted(list_of_questions.items(), key=lambda kv: kv[1], reverse=True):
-            question_collection = question_collection + "%s: %s" % (key, value) + "\n"
-            print(question_collection)
     else:
         print("invalid input!")
     
@@ -32,6 +31,10 @@ num_addressed_questions = len(list_of_questions.keys())
 answer_reviews = []
 
 for i in range(num_addressed_questions):
+    print("Question list: ")
+    for key, value in sorted(list_of_questions.items(), key=lambda kv: kv[1], reverse=True):
+            question_collection = question_collection + "%s: %s" % (key, value) + "\n"
+            print(question_collection)
     rate_answer = input("Rate the answers accordingly. Enter a 1 if the answer needs further clarification. Enter a 2 if the answer is satisfactory. Enter a 3 if the question was skipped: ")
     answer_reviews.append(rate_answer)
     print(answer_reviews)
