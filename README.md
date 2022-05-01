@@ -20,3 +20,9 @@ This is one of our first hackathons, and we gained a lot of experience in choosi
 
 ## What's next for Questify
 Our next steps of improvement would be to make our application more accessible for universities and institutions to directly implement Questify into their existing e-learning platforms (i.e Canvas, Blackboard, Moodle, etc.). For example, we aim to make Questify a plug-in styled application to be used as an inclusive way to measure class participation for students with mental health disabilities and directly implement the results from each class session into grades. Moreover, for future iterations of the app we hope to implement location-based sessions to ensure students maintain the integrity of Questify sessions during lecture to avoid irrelevant participation from students not enrolled in the class or distracting participation.
+
+## Works cited
+
+https://scholarworks.lib.csusb.edu/cgi/viewcontent.cgi?article=2351&context=etd 
+
+https://docs.google.com/presentation/d/1wusSuts_69BZHIrRELefVkNDXV4Rwm7Wo0PV4so7AYk/edit?usp=sharing 
