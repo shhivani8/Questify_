@@ -30,12 +30,13 @@ while x == 0:
 num_addressed_questions = len(list_of_questions.keys())
 answer_reviews = []
 
+print("\nQuestion list: ")
+for key, value in sorted(list_of_questions.items(), key=lambda kv: kv[1], reverse=True):
+        question_collection = question_collection + "%s: %s" % (key, value) + "\n"
+        print(question_collection)
+
 for i in range(num_addressed_questions):
-    print("Question list: ")
-    for key, value in sorted(list_of_questions.items(), key=lambda kv: kv[1], reverse=True):
-            question_collection = question_collection + "%s: %s" % (key, value) + "\n"
-            print(question_collection)
-    rate_answer = input("Rate the answers accordingly. Enter a 1 if the answer needs further clarification. Enter a 2 if the answer is satisfactory. Enter a 3 if the question was skipped: ")
+    rate_answer = input("Rate the answers to the questions shown above in the order it is presented.\nEnter a 1 if the answer needs further clarification. Enter a 2 if the answer is satisfactory. Enter a 3 if the question was skipped: ")
     answer_reviews.append(rate_answer)
     print(answer_reviews)
 
@@ -43,5 +44,4 @@ answer_file = open("Answer_on" + date, "w")
 for element in answer_reviews:
     answer_file.write(element + "\n")
 answer_file.close()
-    
 
